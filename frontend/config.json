@@ -25,7 +25,10 @@
                 "id": "demographics",
                 "name": "Basic Info",
                 "fields":[
-                    "openmrsID",
+                    "name",
+                    "gender",
+                    "dob",
+                    "id",
                     "opd"
                 ]
             }
