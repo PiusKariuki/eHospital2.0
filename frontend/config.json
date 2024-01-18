@@ -1,0 +1,51 @@
+{
+    "@openmrs/esm-styleguide": {
+        "Brand color #1": "#235787",
+        "Brand color #2": "#235787",
+        "Brand color #3": "#FC8EAC"
+    },
+    "@openmrs/esm-login-app": {
+        "logo": {
+            "src": "/openmrs/spa/login-icon.png"
+        }
+    },
+    "@openmrs/esm-primary-navigation-app": {
+        "logo": {
+            "src": "/openmrs/spa/primary-navigation.png"
+        }
+    },
+    "@openmrs/esm-patient-chart-app": {
+        "logo": {
+            "src": "/openmrs/spa/primary-navigation.png"
+        }
+    },
+    "@openmrs/esm-patient-registration-app": {
+        "sectionDefinitions": [
+            {
+                "id": "demographics",
+                "name": "Basic Info",
+                "fields":[
+                    "openmrsID",
+                    "opd"
+                ]
+            }
+        ],
+        "sections": [
+            "demographics",
+            "contact",
+            "relationships"
+        ],
+        "fieldDefinitions": [
+            {
+                "id": "opd",
+                "type": "patient identifier",
+                "uuid": "164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "label":"Unique OPD Number",
+                "validation": {
+                    "required": false,
+                    "matches": ""
+                }
+            }
+        ]
+    }
+}
