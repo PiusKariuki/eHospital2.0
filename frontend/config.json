@@ -20,22 +20,16 @@
         }
     },
     "@openmrs/esm-patient-registration-app": {
-        "sectionDefinitions": [
-            {
-                "id": "contact",
-                "name": "Contact Details",
-                "fields": [
-                  "address",
-                  "phone",
-                  "alternatePhone",
-                  "address.address1",
-                  "address.address6",
-                  "address.address5",
-                  "address.cityVillage",
-                  "address.address2",
-                  "healthCenter"
-                ]
-              }
+        "sectionDefinitions": [  
+          {
+            "id": "contact",
+            "name": "Contact Details",
+            "fields": [
+              "address",
+              "phone",
+              "alternatePhone"
+            ]
+          }
         ],
         "sections": [
             "demographics",
@@ -46,7 +40,7 @@
             {
                 "id": "phone",
                 "type": "person attribute",
-                "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
+                "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
                 "label": "Telephone contact",
                 "validation": {
                   "required": true,
