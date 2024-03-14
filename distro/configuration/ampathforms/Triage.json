@@ -3,7 +3,7 @@
   "description": "Triage",
   "version": "1",
   "published": true,
-  "uuid": "cedb8432-cc95-4a87-ab60-10fa75eba615",
+  "uuid": "fb1be5eb-6343-4e16-a625-bf1e329cd59b",
   "retired": false,
   "encounter": "Triage",
   "pages": [
@@ -162,6 +162,7 @@
                 "max": "250",
                 "min": "0"
               },
+              "historicalExpression": "HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
                 "hideWhenExpression": "!(age >= 0 && age <=5)"
               }
@@ -177,6 +178,7 @@
                 "max": "250",
                 "min": "0"
               },
+              "historicalExpression": "HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
                 "hideWhenExpression": "age <= 5"
               }
@@ -252,5 +254,5 @@
   ],
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
-  "encounterType": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
+  "encounterType": "67a71486-1a54-468f-ac3e-7091a9a79584"
 }
