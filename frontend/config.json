@@ -1,99 +1,135 @@
 {
-    "@openmrs/esm-styleguide": {
-        "Brand color #1": "#235787",
-        "Brand color #2": "#235787",
-        "Brand color #3": "#FC8EAC"
-    },
-    "@openmrs/esm-login-app": {
-        "logo": {
-            "src": "/openmrs/spa/login-icon.png"
+  "@openmrs/esm-styleguide": {
+      "Brand color #1": "#235787",
+      "Brand color #2": "#235787",
+      "Brand color #3": "#FC8EAC"
+  },
+  "@openmrs/esm-login-app": {
+      "logo": {
+          "src": "/openmrs/spa/login-icon.png"
+      }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+      "logo": {
+          "src": "/openmrs/spa/primary-navigation.jpg"
+      }
+  },
+  "@openmrs/esm-patient-chart-app": {
+      "logo": {
+          "src": "/openmrs/spa/primary-navigation.jpg"
+      }
+  },
+  "@sjthc/esm-patient-registration-app": {
+      "sectionDefinitions": [  
+        {
+          "id": "contact",
+          "name": "Contact Details",
+          "fields": [
+            "address",
+            "phone",
+            "alternatePhone"
+          ]
         }
-    },
-    "@openmrs/esm-primary-navigation-app": {
-        "logo": {
-            "src": "/openmrs/spa/primary-navigation.png"
-        }
-    },
-    "@openmrs/esm-patient-chart-app": {
-        "logo": {
-            "src": "/openmrs/spa/primary-navigation.png"
-        }
-    },
-    "@openmrs/esm-patient-registration-app": {
-        "sectionDefinitions": [  
-          {
-            "id": "contact",
-            "name": "Contact Details",
-            "fields": [
-              "address",
-              "phone",
-              "alternatePhone"
-            ]
-          }
-        ],
-        "sections": [
-            "demographics",
-            "contact",
-            "relationships"
-        ],
-        "fieldDefinitions": [
+      ],
+      "sections": [
+          "demographics",
+          "contact",
+          "relationships"
+      ],
+      "fieldDefinitions": [
             {
-                "id": "phone",
-                "type": "person attribute",
-                "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
-                "label": "Telephone contact",
-                "validation": {
-                  "required": true,
-                  "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
-                }
-              },
-              {
-                "id": "alternatePhone",
-                "type": "person attribute",
-                "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
-                "label": "Alternate phone number",
-                "validation": {
-                  "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
-                }
-              },
-              {
-                "id": "address.address1",
-                "type": "address",
-                "label": "Postal Address"
-              },
-              {
-                "id": "address.address6",
-                "type": "address",
-                "label": "Location"
-              },
-              {
-                "id": "address.address5",
-                "type": "address",
-                "label": "Sub-location"
-              },
-              {
-                "id": "address.cityVillage",
-                "type": "address",
-                "label": "Village",
-                "validation": {
-                  "required": true
-                }
-              },
-              {
-                "id": "address.address2",
-                "type": "address",
-                "label": "Landmark"
+              "id": "alternatePhone",
+              "type": "person attribute",
+              "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
+              "label": "Alternate phone number",
+              "validation": {
+                "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
               }
-        ],
-        "address": {
-          "useAddressHierarchy": {
-            "useAddressHierarchyLabel": {
-              "countyDistrict": "County",
-              "address4": "Ward",
-              "stateProvince": "Sub county"
             },
-            "searchAddressByLevel": true
-          }
+            {
+              "id": "address.countyDistrict",
+              "type": "address",
+              "label": "County"
+            },
+            {
+              "id": "address.stateProvince",
+              "type": "address",
+              "label": "Sub-County"
+            },
+            {
+              "id": "address.address3",
+              "type": "address",
+              "label": "Ward"
+            },
+            {
+              "id": "address.cityVillage",
+              "type": "address",
+              "label": "Village",
+              "validation": {
+                "required": true
+              }
+            },
+            {
+              "id": "address.address2",
+              "type": "address",
+              "label": "Landmark"
+            }
+      ],
+      "gender": [
+        {
+          "id": "male",
+          "value": "Male",
+          "label": "Male"
+        },
+        {
+          "id": "female",
+          "value": "Female",
+          "label": "Female"
         }
+      ],
+      "address": {
+        "useAddressHierarchy": {
+          "useAddressHierarchyLabel": {
+            "countyDistrict": "County",
+            "address4": "Ward",
+            "stateProvince": "Sub-County"
+          },
+          "searchAddressByLevel": true
+        }
+      },
+      "phone": {
+        "personAttributeUuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a"
+      }
+  },
+  "@openmrs/esm-patient-vitals-app": {
+    "vitals": {
+      "useFormEngine": true,
+      "formName": "Record Triage Details",
+      "formUuid": "fb1be5eb-6343-4e16-a625-bf1e329cd59b",
+      "encounterTypeUuid": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
+    },
+    "concepts": {
+      "systolicBloodPressureUuid": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "diastolicBloodPressureUuid": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "pulseUuid":"5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "temperatureUuid":"5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "oxygenSaturationUuid":"5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "heightUuid":"5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "weightUuid":"5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "respiratoryRateUuid":"5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "midUpperArmCircumferenceUuid":"1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "generalPatientNoteUuid": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "Translation overrides": {
+      "en": {
+        "vitalsAndBiometrics": "Vitals & Biometrics",
+        "Vitals & Biometrics": "Vitals & Biometrics",
+        "biometricDisplayed": "Biometrics displayed",
+        "biometrics": "Biometrics"
+      }
+    },
+    "Display conditions": {
+      "privileges": ["View Vitals and Biometrics"]
     }
+  }
 }

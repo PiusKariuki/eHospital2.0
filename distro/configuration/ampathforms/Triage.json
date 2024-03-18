@@ -86,7 +86,8 @@
               "id": "pulseRate",
               "questionOptions": {
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
@@ -95,11 +96,12 @@
             },
             {
               "label": "Systolic B.P",
-              "type": "",
+              "type": "obs",
               "id": "sysBP",
               "questionOptions": {
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 130.5 || myValue < 119.5)",
@@ -108,11 +110,12 @@
             },
             {
               "label": "Diastolic B.P",
-              "type": "",
+              "type": "obs",
               "id": "diasBP",
               "questionOptions": {
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 85.5 || myValue < 79.5)",
@@ -125,7 +128,8 @@
               "id": "respRate",
               "questionOptions": {
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 16.5 || myValue < 11.5)",
@@ -138,7 +142,8 @@
               "id": "oxygenSat",
               "questionOptions": {
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0"
               },
               "alert": {
                 "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 94.5)",
@@ -254,5 +259,5 @@
   ],
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
-  "encounterType": "67a71486-1a54-468f-ac3e-7091a9a79584"
+  "encounterType": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
 }
