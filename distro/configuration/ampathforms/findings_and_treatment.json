@@ -1,6 +1,9 @@
 {
   "name": "Findings and Treatment",
+  "version": "1.0.0",
+  "published": true,
   "retired": false,
+  "encounter": "Findings and Treatment",
   "pages": [
     {
       "label": "Client details",
@@ -10,7 +13,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Chief Complian",
+              "label": "Chief Complain",
               "id": "co",
               "type": "obs",
               "required": false,
@@ -144,7 +147,6 @@
       ]
     }
   ],
-  "version": "1.0",
   "description": "Findings and Treatment",
   "encounterType": "f02fecec-4d74-4430-8e59-5150016551e5",
   "uuid": "95301452-081a-44e2-a561-fe83d6f02a1f"
