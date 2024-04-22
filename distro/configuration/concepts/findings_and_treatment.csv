@@ -15,7 +15,7 @@ b2eb5496-e708-44ad-bce4-8a976941ca44,,,General Examination Section,General Exami
 35b212be-b951-484e-ab67-7e27f65445c3,,,Impressions/Diagnosis Section,Impressions/Diagnosis Section,,,,,Misc,N/A,,Impressions/Diagnosis
 d0327c30-66b0-46bf-9649-f0f740273dde,,,Treatment Plan Section,Treatment Plan Section,,,,,Misc,N/A,,Treatment Plan
 7619cf81-313d-4fcd-bdb1-57f94c376d58,,,TCA Section,TCA Section,,,,,Misc,N/A,,TCA
-160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160632;AMPATH:1915;LOINC:48767-8 ,Free text general,	
-Freetext general,"This is a freetext field for general use. It should be tied to another concept as a child.",,,,Question,Text,,
+160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,CIEL:160632;AMPATH:1915;LOINC:48767-8 ,Free text general,"	
+Freetext general",This is a freetext field for general use. It should be tied to another concept as a child.,,,,Question,Text,,
 7c972f28-dbdf-4a8a-8b60-937ef2592324,,,Reason for Visit,Reason for Visit,,,,,Question,Text,,
 324e55a6-2a39-496a-8e56-54281efcfebd,,,Triage Notes,Triage Notes,,,,,Question,Text,,

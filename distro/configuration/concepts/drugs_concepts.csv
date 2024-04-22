@@ -33,8 +33,7 @@ b4dc0131-0a26-477c-806a-f690225194d6,,,Atropine,Atropine,Drug,N/A,,,
 12f2b5bc-a9be-4860-9393-03f30fa3f1cd,,,Beclomethasone Dipropionate,Dipropionate de béclométhasone,Drug,N/A,,,
 502820f5-5a8b-4ee9-beba-fcf23c1ec2f7,,,Benzoic & Salicylic Acid,Acide benzoïque et salicylique,Drug,N/A,,,
 9bc6c942-9da6-401f-ab44-87b95fa86830,,,Benzoyl Peroxide,Peroxyde de benzoyle,Drug,N/A,,,
-a7ce5d88-1940-4569-b07b-97b12cb9656f,,,Betamethasone,"Probeta -N( Betamethasone
-+Neomycin)",Drug,N/A,,,
+a7ce5d88-1940-4569-b07b-97b12cb9656f,,,Betamethasone,Bétamethasone,Drug,N/A,,,
 208b5be3-5c5a-4a1f-9c9a-2779373c7d86,,,Bupivacaine Hydrochloride,Chlorhydrate de bupivacaïne,Drug,N/A,,,
 bb2afe54-a7d9-4ee5-9823-5a53fe03b725,,,Caffeine Citrate,Citrate de caféine,Drug,N/A,,,
 d08ec8fe-2d91-489f-a416-16af0a043b0b,,,Calamine,Calamine,Drug,N/A,,,
@@ -696,8 +695,8 @@ f155a6e7-e7d7-4708-8aac-4a46fde5239a,,,IV Gentacin (GENTAMYCIN),IV Gentacin (GEN
 04359897-ca02-4c32-a179-58123246888e,,,Otorex,Otorex,Drug,N/A,,,
 26d064db-2dda-4701-8a7f-4ce0f681259e,,,Prednsolone Acetate (Pharmasolone),Prednsolone Acetate (Pharmasolone),Drug,N/A,,,
 bba5b112-0128-4be7-9bea-b586d4e8d692,,,"Probeta -N( Betamethasone
-+Neomycin)        ","Probeta -N( Betamethasone
-+Neomycin)",Drug,N/A,,,
++Neomycin)	","Probeta -N( Betamethasone
++Neomycin)	",Drug,N/A,,,
 be981878-0cc4-44ed-9fd0-1c5e0a8d71d7,,,Tears Naturalle,Tears Naturalle,Drug,N/A,,,
 a08d80cb-13f9-425f-989c-d162a7480003,,,Timolol eye drop,Timolol eye drop,Drug,N/A,,,
 9e57ac88-19c8-43c3-b8f6-6f4c46058e3d,,,ISORYN (adult) Ephedrine,ISORYN (adult) Ephedrine,Drug,N/A,,,
