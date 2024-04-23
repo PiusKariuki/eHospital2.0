@@ -29,12 +29,21 @@
             "phone",
             "alternatePhone"
           ]
+        },
+        {
+          "id": "students",
+          "name": "Student Details (Applies to students)",
+          "fields": [
+            "admissionNumber",
+            "foundationName"
+          ]
         }
       ],
       "sections": [
           "demographics",
           "contact",
-          "relationships"
+          "relationships",
+          "students"
       ],
       "fieldDefinitions": [
             {
@@ -82,6 +91,18 @@
               "id": "address.address2",
               "type": "address",
               "label": "Landmark"
+            },
+            {
+              "id": "admissionNumber",
+              "type": "person attribute",
+              "uuid": "f5e5a725-fc9f-47d2-8d43-4af8bcda9cfc",
+              "label": "Students Admission Number"
+            },
+            {
+              "id": "foundationName",
+              "type": "person attribute",
+              "uuid": "f9c39d6c-9893-4474-8070-ef592f2be875",
+              "label": "Foundation Name"
             }
       ],
       "fieldConfigurations": {
