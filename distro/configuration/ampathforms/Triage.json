@@ -72,7 +72,6 @@
               "questionOptions": {
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
-                "max": "43",
                 "min": "25"
               },
               "alert": {

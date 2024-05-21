@@ -630,7 +630,7 @@
               "label": "Screened for tuberculosis",
               "type": "obs",
               "required": true,
-              "id": "tbScreening",
+              "id": "tbScreeningAdults",
               "questionOptions": {
                 "rendering": "select",
                 "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
@@ -661,7 +661,7 @@
               "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
               "type": "obs",
               "required": true,
-              "id": "suspectedMalariaCases",
+              "id": "suspectedMalariaCasesAdults",
               "questionOptions": {
                 "rendering": "checkbox",
                 "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
@@ -692,7 +692,7 @@
               "label": "Diagnosis",
               "type": "obs",
               "required": true,
-              "id": "diagnosis",
+              "id": "diagnosisAdults",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "aa295620-4576-4459-93ae-00bac0de4c77"
@@ -720,7 +720,7 @@
               "label": "Prescription",
               "type": "obs",
               "required": true,
-              "id": "prescription",
+              "id": "prescriptionAdults",
               "questionOptions": {
                 "rendering": "text",
                 "concept": "efce67b4-7402-45d0-bc54-dfd840fdc463"
