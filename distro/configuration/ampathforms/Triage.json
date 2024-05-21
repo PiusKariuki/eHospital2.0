@@ -1,7 +1,7 @@
 {
-  "name": "Triage",
+  "name": "1. Triage",
   "description": "Triage",
-  "version": "1",
+  "version": "1.0.0",
   "published": true,
   "retired": false,
   "encounter": "Triage",
@@ -256,11 +256,11 @@
               "id": "lmp",
               "required": false,
               "questionOptions": {
-                "rendering": "number",
-                "concept": ""
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": "!(age >= 0 && age <=15)"
               }
             }
           ]
@@ -286,5 +286,5 @@
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
   "encounterType": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128",
-  "uuid": ""
+  "uuid": "1d87683a-fac0-3846-8b16-e3d2fad9bdf6"
 }

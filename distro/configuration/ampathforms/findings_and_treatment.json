@@ -1,5 +1,5 @@
 {
-  "name": "Findings and Treatment",
+  "name": "2. Findings and Treatment",
   "version": "1.0.0",
   "published": true,
   "retired": false,
@@ -9,9 +9,29 @@
       "label": "Client details",
       "sections": [
         {
-          "label": "Client details",
+          "label": "Patient referred",
           "isExpanded": "true",
           "questions": [
+            {
+              "label": "Patient referred from another facility?",
+              "type": "obs",
+              "required": true,
+              "id": "isPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "32c2d223-6a01-4ede-8224-7feeb073e2ab",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                  }
+                ]
+              }
+            },
             {
               "label": "Type of facility referred from",
               "type": "obs",
@@ -38,11 +58,14 @@
                     "label": "Referred From other facility"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "isPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
               "label": "Specify Facility referred from",
-              "required": false,
+              "required": true,
               "id": "facilityReferredFromSpecify",
               "questionOptions": {
                 "rendering": "text",
@@ -53,7 +76,13 @@
               "hide": {
                 "hideWhenExpression": "facilityRefferedFrom !== '61f9ac9f-4743-4f95-bd83-02881612083c'"
               }
-            },
+            }
+          ]
+        },
+        {
+          "label": "Client details",
+          "isExpanded": "true",
+          "questions": [
             {
               "label": "Chief Complain",
               "id": "co",
@@ -110,10 +139,13 @@
             },
             {
               "label": "Add Comment",
-              "type": "obs",
+              "type": "obsGroup",
               "required": true,
               "id": "generalExaminationAddComment",
-              "questionOptions": {},
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "b2eb5496-e708-44ad-bce4-8a976941ca44"
+              },
               "questions": [
                 {
                   "label": "General Examination Comment",
@@ -156,10 +188,13 @@
             },
             {
               "label": "Add Comment",
-              "type": "obs",
+              "type": "obsGroup",
               "required": true,
               "id": "systemicExaminationAddComment",
-              "questionOptions": {},
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "98554c7b-cdec-41cb-b1f6-10972a6139b2"
+              },
               "questions": [
                 {
                   "label": "Systemic Examination Comment",
@@ -237,7 +272,7 @@
               "type": "obs",
               "required": false,
               "questionOptions": {
-                "rendering":"select",
+                "rendering":"radio",
                 "concept": "338d28f6-0095-4898-a11f-84bb646e612b",
                 "answers": [
                   {
@@ -257,10 +292,13 @@
             },
             {
               "label": "Add Comment",
-              "type": "obs",
+              "type": "obsGroup",
               "required": true,
               "id": "tcaAddComment",
-              "questionOptions": {},
+              "questionOptions": {
+                "rendering": "repeating",
+                "concept": "7619cf81-313d-4fcd-bdb1-57f94c376d58"
+              },
               "questions": [
                 {
                   "label": "TCA",
@@ -318,7 +356,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -338,7 +376,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -369,7 +407,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -416,7 +454,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -429,7 +467,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -449,7 +487,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -462,7 +500,7 @@
               },
               "validators": [],
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -485,7 +523,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -512,7 +550,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             },
             {
@@ -539,12 +577,12 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": " age > 5"
               }
             }
           ],
           "hide": {
-            "hideWhenExpression": "!(age >= 0 && age <=5)"
+            "hideWhenExpression": " age > 5"
           }
         },
         {
@@ -731,6 +769,26 @@
           "isExpanded": "true",
           "questions": [
             {
+              "label": "Is Patient being referred to Another facility?",
+              "type": "obs",
+              "required": true,
+              "id": "isBeingPatientReferred",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0a9deaf2-cd0d-4af7-85b1-7db013e448e4",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                  }
+                ]
+              }
+            },
+            {
               "label": "Type of facility referred to",
               "type": "obs",
               "required": true,
@@ -756,11 +814,14 @@
                     "label": "N/A"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "isBeingPatientReferred !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
               "label": "Specify Facility referred to",
-              "required": false,
+              "required": true,
               "id": "facilityReferredToSpecify",
               "questionOptions": {
                 "rendering": "text",
@@ -774,7 +835,7 @@
             },
             {
               "label": "REMARKS/Outome",
-              "required": false,
+              "required": true,
               "id": "remarks",
               "questionOptions": {
                 "rendering": "text",
