@@ -360,7 +360,7 @@
               }
             },
             {
-              "label": "Duration of Illness",
+              "label": "Duration of Illness (days)",
               "required": true,
               "id": "durationOfIllness",
               "questionOptions": {
@@ -471,7 +471,7 @@
               }
             },
             {
-              "label": "Quantity of medication prescribed per dose",
+              "label": "Quantity of medication prescribed per dose (pills/grams)",
               "required": false,
               "id": "quantityOfMedicationPrescribed",
               "questionOptions": {
