@@ -3,7 +3,6 @@
   "description": "Triage",
   "version": "1",
   "published": true,
-  "uuid": "fb1be5eb-6343-4e16-a625-bf1e329cd59b",
   "retired": false,
   "encounter": "Triage",
   "pages": [
@@ -286,5 +285,6 @@
   ],
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
-  "encounterType": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
+  "encounterType": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128",
+  "uuid": ""
 }
