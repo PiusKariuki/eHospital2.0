@@ -1,4 +1,11 @@
 Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:1001,Data class,Data type,Answers,Members
+af52b90b-ead9-4cbb-a99a-137e154db272,,,Adult,Adult,,,,,Misc,N/A,,
+aff3fd37-3723-4acf-9e3d-91b650bbfec2,,,Child,Child,,,,,Misc,N/A,,
+0e267726-c004-4ffd-956d-1c8401cf08b5,,,Patient Type,Patient Type,,,,,Question,Coded,"Adult;
+Child",
+"ca004964-0fb0-486c-8f23-cc53ed27ece0
+",,,Filling report,Filling report,,,,,Question,Text,,
+8d758a04-541f-4502-9bb5-742cecc8a691,,,Medications Prescribed,Medications Prescribed,,,,,Question,Text,,
 3b7fcddc-092d-4e4a-81ff-57e2e9d61e23,,,Filling,Filling,,,,,Misc,N/A,,
 bbe168c4-d6ba-449f-b900-3100c585dbfb,,,Extraction Adult,Extraction Adult,,,,,Misc,N/A,,
 28b3d4af-7e1a-4a32-b7a7-f953e01876d9,,,Extraction Child,Extraction Child,,,,,Misc,N/A,,

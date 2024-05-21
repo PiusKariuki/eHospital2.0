@@ -145,6 +145,563 @@
           ]
         }
       ]
+    },
+    {
+      "label": "Other details",
+      "sections": [
+        {
+          "label": "Other details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Danger signs baby",
+              "type": "obs",
+              "required": true,
+              "id": "dangerSignsBaby",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "7230eb74-e60a-4031-a7c1-26281add0db4",
+                "answers": [
+                  {
+                    "concept": "107349BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unable to drink or breastfeed"
+                  },
+                  {
+                    "concept": "140528BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Vomiting everything"
+                  },
+                  {
+                    "concept": "13688BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Convulsions"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  },
+                  {
+                    "concept": "140529BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Currently convulsing"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Duration of Illness",
+              "required": true,
+              "id": "durationOfIllness",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1817BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "durationOfIllness < 0",
+                  "message": "Duration of Illness cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": true,
+              "id": "suspectedMalariaCases",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Tracer Drugs Prescribed",
+              "type": "obs",
+              "required": true,
+              "id": "tracerDrugsPrescribed",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "c422af79-d5b7-4560-9320-7f53045deaaa",
+                "answers": [
+                  {
+                    "concept": "7e062525-598e-4634-868d-1d015badbd36",
+                    "label": "ORS & Zinc"
+                  },
+                  {
+                    "concept": "382BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "ORAL REHYDRATION SALTS"
+                  },
+                  {
+                    "concept": "a7587ce7-f402-4ee3-b36b-4ab78d93d221",
+                    "label": "ZINC"
+                  },
+                  {
+                    "concept": "86339AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "VITAMIN A"
+                  },
+                  {
+                    "concept": "c0595755-f114-4800-88dc-ac97b7d62ec8",
+                    "label": "Amox DT"
+                  },
+                  {
+                    "concept": "7127BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "OXYGEN"
+                  },
+                  {
+                    "concept": "8f668b49-584f-4cba-b0f2-817a8aaf50c4",
+                    "label": "ALBENDAZOLE"
+                  },
+                  {
+                    "concept": "2045BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "INTRAVENOUS FLUID ADMINISTRATION"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "IMNCI Classifications or Diagnosis",
+              "required": true,
+              "id": "imnciClassification",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7e0cb443-eece-40da-9acd-94888a7695b1"
+              },
+              "validators": []
+            },
+            {
+              "label": "Quantity of medication prescribed per dose",
+              "required": true,
+              "id": "quantityOfMedicationPrescribed",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "109537BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "min": 0
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "quantityOfMedicationPrescribed < 0",
+                  "message": "Quantity of medication prescribed per dose cannot be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "All other treatments",
+              "required": false,
+              "id": "allOtherTreatments",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "04088077-2c91-4fa8-9406-7005d884d151"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Immunization status up to date",
+              "type": "obs",
+              "required": true,
+              "id": "immunizationUpToDate",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "efa157c0-4d93-4e7a-886b-b2af02a30374",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "TB Screening",
+              "type": "obs",
+              "required": true,
+              "id": "tbScreening",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Nutrition and diatetics",
+              "type": "obs",
+              "required": true,
+              "id": "nutritionAndDietetics",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f5a93555-0455-4de9-93c7-92111d8ddb72",
+                "answers": [
+                  {
+                    "concept": "1502BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "NUTRITION COUNSELING"
+                  },
+                  {
+                    "concept": "9822d9da-7feb-4da6-8a99-6f842540931b",
+                    "label": "Nutrition therupetic supplements"
+                  },
+                  {
+                    "concept": "da9055e2-17a1-4042-8e38-cf396a1ce88f",
+                    "label": " Diatetics"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Type of facility referred to",
+              "type": "obs",
+              "required": true,
+              "id": "typeOfFacilityReferredTo",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a9b68c20-8ace-459a-8e7b-68c9a8487aba",
+                "answers": [
+                  {
+                    "concept": "4ca6ae87-7a34-4079-a67b-7107156f30e8",
+                    "label": "Referred to Community Unit"
+                  },
+                  {
+                    "concept": "ffc9af40-cfb6-4edf-89a8-d478a1ed00f6",
+                    "label": "Referred to other facility"
+                  },
+                  {
+                    "concept": "76252f2b-4a80-4414-a630-a2bee89c00a0",
+                    "label": "Referred Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "Specify Facility referred to",
+              "required": false,
+              "id": "facilityReferredToSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2c69e8af-4500-4bf2-b8f6-0d38d5c546ad",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfFacilityReferredTo !== 'ffc9af40-cfb6-4edf-89a8-d478a1ed00f6'"
+              }
+            },
+            {
+              "label": "REMARKS/Outome",
+              "required": false,
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6990f720-b0f7-405d-bfb6-7a1f058109bb"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "!(age >= 0 && age <=5)"
+          }
+        },
+        {
+          "label": "Visual Acuity **RE / LE**",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visual acuity right eye",
+              "type": "obs",
+              "required": true,
+              "id": "visualAcuityRightEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108485BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Visual acuity left eye",
+              "type": "obs",
+              "required": true,
+              "id": "visualAcuityLeftEye",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "108483BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "age <= 5"
+          }
+        },
+        {
+          "label": "Other details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Screened for tuberculosis",
+              "type": "obs",
+              "required": true,
+              "id": "tbScreening",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "42eb7cdc-bd89-4b20-8e52-699a7e685181",
+                "answers": [
+                  {
+                    "concept": "106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Presumed diagnosis"
+                  },
+                  {
+                    "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Not done"
+                  },
+                  {
+                    "concept": "1928BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Patient referred"
+                  },
+                  {
+                    "concept": "1969BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "On TB Treatment"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
+              "type": "obs",
+              "required": true,
+              "id": "suspectedMalariaCases",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "answers": [
+                  {
+                    "concept": "5902fc83-0742-4eb2-bd02-823f71d0e641",
+                    "label": "Presenting with symptoms but NOT tested"
+                  },
+                  {
+                    "concept": "1923BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "RAPID TEST FOR MALARIA"
+                  },
+                  {
+                    "concept": "307a4edd-6a8b-4a49-842e-34117cbea114",
+                    "label": "Microscopy Tested (-ve)"
+                  },
+                  {
+                    "concept": "23889BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                    "label": "Unconscious"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Diagnosis",
+              "type": "obs",
+              "required": true,
+              "id": "diagnosis",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "aa295620-4576-4459-93ae-00bac0de4c77"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Record the name of  Drugs from the prescription or drug codes if provided",
+              "type": "obs",
+              "required": true,
+              "id": "nameOfDrugs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "7976446e-3fbd-4cd0-871a-cbdc621998fc"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Prescription",
+              "type": "obs",
+              "required": true,
+              "id": "prescription",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "efce67b4-7402-45d0-bc54-dfd840fdc463"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Nutritional interventions provided ",
+              "type": "obs",
+              "required": true,
+              "id": "nutritionInterventions",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "f570fc3a-e021-4475-92aa-84ad9592cbb9",
+                "answers": [
+                  {
+                    "concept": "f18c2f4e-3937-4898-89d6-7c6f917157c6",
+                    "label": "Nutrition assessment"
+                  },
+                  {
+                    "concept": "1435e7ff-1ba9-4ea7-900a-181c2d1507e2",
+                    "label": "Nutrition education"
+                  },
+                  {
+                    "concept": "341e525d-f1ac-41d2-a5f6-cc0a97ec372d",
+                    "label": " Nutrition supplements"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Type of facility referred to",
+              "type": "obs",
+              "required": true,
+              "id": "typeOfFacilityReferredToAdults",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a9b68c20-8ace-459a-8e7b-68c9a8487aba",
+                "answers": [
+                  {
+                    "concept": "4ca6ae87-7a34-4079-a67b-7107156f30e8",
+                    "label": "Referred to Community Unit"
+                  },
+                  {
+                    "concept": "ffc9af40-cfb6-4edf-89a8-d478a1ed00f6",
+                    "label": "Referred to other facility"
+                  },
+                  {
+                    "concept": "76252f2b-4a80-4414-a630-a2bee89c00a0",
+                    "label": "Referred Within"
+                  },
+                  {
+                    "concept": "ccda26b2-a73f-4dcb-be03-1572eb6cf7b9",
+                    "label": "N/A"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "Specify Facility referred to",
+              "required": false,
+              "id": "facilityReferredToSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "2c69e8af-4500-4bf2-b8f6-0d38d5c546ad",
+                "answers": []
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfFacilityReferredToAdults !== 'ffc9af40-cfb6-4edf-89a8-d478a1ed00f6'"
+              }
+            },
+            {
+              "label": "REMARKS/Outome",
+              "required": false,
+              "id": "remarks",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "6990f720-b0f7-405d-bfb6-7a1f058109bb"
+              },
+              "validators": []
+            }
+          ],
+          "hide": {
+            "hideWhenExpression": "age <= 5"
+          }
+        }
+      ]
     }
   ],
   "description": "Findings and Treatment",
