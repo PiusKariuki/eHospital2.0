@@ -69,6 +69,7 @@
               "label": "Temperature (°C) :",
               "type": "obs",
               "id": "temperature",
+              "required": false,
               "questionOptions": {
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
@@ -235,6 +236,32 @@
               },
               "hide": {
                 "hideWhenExpression": "age <= 5"
+              }
+            },
+            {
+              "label": "MUAC",
+              "type": "obs",
+              "id": "muac",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
+              }
+            },
+            {
+              "label": "LMP",
+              "type": "obs",
+              "id": "lmp",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": ""
+              },
+              "hide": {
+                "hideWhenExpression": "!(age >= 0 && age <=5)"
               }
             }
           ]
