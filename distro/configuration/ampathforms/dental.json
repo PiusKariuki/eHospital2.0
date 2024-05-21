@@ -6,6 +6,37 @@
     "encounter": "Dental",
     "pages": [
       {
+        "label": "Patient Details",
+        "sections": [
+          {
+            "label": "Patient Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Patient Type:",
+                "type": "obs",
+                "required": true,
+                "id": "patientDetails",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "0e267726-c004-4ffd-956d-1c8401cf08b5",
+                  "answers": [
+                    {
+                      "concept": "af52b90b-ead9-4cbb-a99a-137e154db272",
+                      "label": "Adult"
+                    },
+                    {
+                      "concept": "aff3fd37-3723-4acf-9e3d-91b650bbfec2",
+                      "label": "Child"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "label": "Visit details",
         "sections": [
           {
@@ -62,12 +93,8 @@
                       "label": "Filling"
                     },
                     {
-                      "concept": "bbe168c4-d6ba-449f-b900-3100c585dbfb",
-                      "label": "Extraction Adult"
-                    },
-                    {
-                      "concept": "28b3d4af-7e1a-4a32-b7a7-f953e01876d9",
-                      "label": "Extraction Child"
+                      "concept": "b612c8fd-34e7-4c92-ab13-3054184dd557",
+                      "label": "Extraction"
                     },
                     {
                       "concept": "2de902fa-22b2-4daa-b42a-4ee3b221f7c4",
@@ -104,6 +131,16 @@
                 "validators": [],
                 "hide": {
                   "hideWhenExpression": "dentalProcedure !== '595fd534-3612-422a-9dfa-e4cd34cdb337'"
+                }
+              },
+              {
+                "label": "Filling report:",
+                "required": false,
+                "id": "fillingReport",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "ca004964-0fb0-486c-8f23-cc53ed27ece0",
+                  "answers": []
                 }
               }
             ]
