@@ -14,9 +14,10 @@
             "questions": [
               {
                 "label": "Date:",
-                "type": "encounterDatetime",
+                "type": "obs",
                 "questionOptions": {
-                  "rendering": "ui-select-extended"
+                  "rendering": "date",
+                  "concept":"21eced40-aa0d-47a7-bb9a-a5a3fc51a184"
                 },
                 "id": "encDate"
               },
