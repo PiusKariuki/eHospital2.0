@@ -39,7 +39,7 @@
           "id": "students",
           "name": "Student Details (Applies to students)",
           "fields": [
-            "admissionNumber",
+            "studentAdmissionNumber",
             "foundationName"
           ]
         }
@@ -52,19 +52,10 @@
       ],
       "fieldDefinitions": [
             {
-              "id": "patientPhone",
-              "type": "person attribute",
-              "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
-              "label": "Alternate phone number",
-              "validation": {
-                "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
-              }
-            },
-            {
               "id": "alternatePhone",
               "type": "person attribute",
-              "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
-              "label": "Alternate phone number",
+              "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
+              "label": "Alternate Phone Number",
               "validation": {
                 "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
               }
@@ -98,7 +89,7 @@
               "label": "Landmark"
             },
             {
-              "id": "admissionNumber",
+              "id": "studentAdmissionNumber",
               "type": "person attribute",
               "uuid": "f5e5a725-fc9f-47d2-8d43-4af8bcda9cfc",
               "label": "Students Admission Number"
@@ -145,7 +136,7 @@
           }
         },
         "phone": {
-          "personAttributeUuid":"b2c38640-2603-4629-aebd-3b54f33f1e3a",
+          "personAttributeUuid":"14d4f066-15f5-102d-96e4-000c29c2a5d7",
           "validation": {
             "required": false,
             "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
@@ -231,7 +222,7 @@
     "vitals": {
       "useFormEngine": true,
       "formName": "Record Triage Details",
-      "formUuid": "1d87683a-fac0-3846-8b16-e3d2fad9bdf6",
+      "formUuid": "1165eb3a-73f4-3cbe-ae87-a30a05d89b88",
       "encounterTypeUuid": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
     },
     "concepts": {

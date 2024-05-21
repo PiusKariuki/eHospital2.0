@@ -54,7 +54,7 @@
                     "required": true,
                     "id": "examRequested",
                     "questionOptions": {
-                        "rendering": "select",
+                        "rendering": "radio",
                         "concept": "e1449ab7-dd55-4443-a7c1-bf77b39ea386",
                         "answers": [
                             {
@@ -74,7 +74,7 @@
                     "required": true,
                     "id": "referral",
                     "questionOptions": {
-                        "rendering": "select",
+                        "rendering": "radio",
                         "concept": "d1e2f14d-cc8c-4fb2-ba44-04c2f223d294",
                         "answers": [
                             {
@@ -175,7 +175,7 @@
                     "required": true,
                     "id": "relevantHistory",
                     "questionOptions": {
-                        "rendering": "text",
+                        "rendering": "textarea",
                         "concept": "684e52f3-dd08-465b-ac6c-5aca23cb19d9",
                         "answers": []
                     }
@@ -197,7 +197,7 @@
                     "required": true,
                     "id": "services",
                     "questionOptions": {
-                        "rendering": "text",
+                        "rendering": "select",
                         "concept": "a9a88d26-1704-4ddf-9e31-6b137432b60d",
                         "answers": [
                             {
