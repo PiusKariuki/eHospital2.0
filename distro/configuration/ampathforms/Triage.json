@@ -259,7 +259,7 @@
                 "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 9 && age <= 45) && sex === 'M'"
+                "hideWhenExpression": "sex === 'M' || !(age >= 9 && age <= 45)"
               }
             }
           ]
