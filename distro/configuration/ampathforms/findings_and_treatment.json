@@ -1,5 +1,5 @@
 {
-  "name": "2. Findings and Treatment",
+  "name": "B. Findings and Treatment",
   "version": "1.0.0",
   "published": true,
   "retired": false,
@@ -288,6 +288,19 @@
               "alert": {
                 "alertWhenExpression": "tca === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
                 "message": "Please place an appointment for the Patient"
+              }
+            },
+            {
+              "label": "Please place an appointment for the Patient",
+              "required": true,
+              "id": "appointmentWorkspaceLauncher",
+              "questionOptions": {
+                "rendering": "workspace-launcher",
+                "buttonLabel": "Add appointments",
+                "workspaceName": "appointments-form-workspace"
+              },
+              "hide":{
+                "hideWhenExpression": "tca !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {

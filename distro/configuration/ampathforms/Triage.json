@@ -1,5 +1,5 @@
 {
-  "name": "1. Triage",
+  "name": "A. Triage",
   "description": "Triage",
   "version": "1.0.0",
   "published": true,
@@ -259,7 +259,7 @@
                 "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=15)"
+                "hideWhenExpression": "!(age >= 9 && age <= 45) && sex === 'M'"
               }
             }
           ]

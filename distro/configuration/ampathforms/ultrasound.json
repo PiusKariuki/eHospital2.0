@@ -1,5 +1,5 @@
 {
-    "name": "4. Ultra Sound",
+    "name": "D. UltraSound",
     "version": "1.0.0",
     "published": true,
     "retired": false,
@@ -42,10 +42,10 @@
         ]
       },
       {
-        "label": "Ultra Sound Details",
+        "label": "Ultrasound Details",
         "sections": [
           {
-            "label": "Ultra Sound Details",
+            "label": "Ultrasound Details",
             "isExpanded": "true",
             "questions": [
                 {
@@ -150,7 +150,7 @@
                     "required": true,
                     "id": "referralImageForm",
                     "questionOptions": {
-                        "rendering": "document",
+                        "rendering": "file",
                         "concept": "a7a1f899-135b-49b3-a1fe-d9ef0b50c40b",
                         "answers": []
                     },

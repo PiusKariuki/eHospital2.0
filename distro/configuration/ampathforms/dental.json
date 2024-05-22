@@ -1,5 +1,5 @@
 {
-  "name": "3. Dental",
+  "name": "C. Dental",
   "version": "1.0.0",
   "published": true,
   "retired": false,
@@ -36,18 +36,7 @@
                 "rendering": "ui-select-extended"
               },
               "id": "encLocation"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "Patient Details",
-      "sections": [
-        {
-          "label": "Patient Details",
-          "isExpanded": "true",
-          "questions": [
+            },
             {
               "label": "Patient Type:",
               "type": "obs",
@@ -76,7 +65,7 @@
       "label": "Dental Details",
       "sections": [
         {
-          "label": "",
+          "label": "Dental Details",
           "isExpanded": "true",
           "questions": [
             {
@@ -134,12 +123,22 @@
               }
             },
             {
-              "label": "Filling report:",
+              "label": "Dental Procedure Notes",
               "required": false,
               "id": "fillingReport",
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "ca004964-0fb0-486c-8f23-cc53ed27ece0",
+                "answers": []
+              }
+            },
+            {
+              "label": "Findings",
+              "required": false,
+              "id": "findings",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "2dd2e395-858b-4754-878c-bc22afe0f3d6",
                 "answers": []
               }
             }
