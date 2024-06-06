@@ -26,7 +26,7 @@
                                 "label": "Routine"
                             },
                             {
-                                "concept": "f1dd75a8-22f4-41d0-8dc6-74d948a0a861",
+                                "concept": "dc3492ef-24a5-4fd9-b58d-4fd2acf7071f",
                                 "label": "Urgent"
                             }
                         ]
@@ -113,15 +113,7 @@
                     "id": "referralImageFormProvided",
                     "questionOptions": {
                         "concept": "a7a1f899-135b-49b3-a1fe-d9ef0b50c40b",
-                        "showDate": "true",
-                        "rendering": "file",
-                        "shownDateOptions": {
-                            "validators": [
-                                {
-                                    "type": "date"
-                                }
-                            ]
-                        }
+                        "rendering": "file"
                     },
                     "type": "obs",
                     "validators": [],
