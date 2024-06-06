@@ -433,6 +433,19 @@
           "isExpanded": "true",
           "questions": [
             {
+              "label": "Caregiver’s Telephone No.",
+              "required": true,
+              "id": "careGiverTelephone",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "age > 5"
+              }
+            },
+            {
               "label": "Danger signs baby",
               "type": "obs",
               "required": true,
