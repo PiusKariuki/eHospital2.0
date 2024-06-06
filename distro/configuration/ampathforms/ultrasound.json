@@ -109,30 +109,24 @@
                     }
                 },
                 {
-                    "label": "referral form/image provided?",
-                    "type": "obs",
-                    "required": true,
+                    "label": "referral form/image",
                     "id": "referralImageFormProvided",
                     "questionOptions": {
-                        "rendering": "radio",
                         "concept": "a7a1f899-135b-49b3-a1fe-d9ef0b50c40b",
-                        "answers": [
-                            {
-                                "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                "label": "Yes"
-                            },
-                            {
-                                "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                                "label": "No"
-                            }
-                        ]
+                        "showDate": "true",
+                        "rendering": "file",
+                        "shownDateOptions": {
+                            "validators": [
+                                {
+                                    "type": "date"
+                                }
+                            ]
+                        }
                     },
+                    "type": "obs",
+                    "validators": [],
                     "hide":{
                         "hideWhenExpression":"referral !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                    },
-                    "alert": {
-                      "alertWhenExpression": "referralImageFormProvided === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
-                      "message": "Please upload the image/form using the attachments module"
                     }
                 }
             ]
