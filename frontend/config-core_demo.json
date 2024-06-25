@@ -214,7 +214,7 @@
   "@openmrs/esm-patient-vitals-app": {
     "vitals": {
       "useFormEngine": true,
-      "formName": "Record Triage Details",
+      "formName": "1. Triage",
       "formUuid": "6205a52d-eb0a-3b86-84b1-812858d272fb",
       "encounterTypeUuid": "3ccde6e2-9730-46a3-8f69-8a5e0cc48128"
     },
