@@ -1,4 +1,9 @@
 Uuid,Void/Retire,Name,Description,Parent,Tags,Tag|Facility Location,Attribute|9eca4f4e-707f-4bb8-8289-2f9b6e93803c,Attribute|Last Audit Date,Address 1,Address 2,Address 3,Address 4,Address 5,Address 6,City/Village,County/District,State/Province,Postal Code,Country,_order:1000
 8d6c993e-c2cc-11de-8d13-0010c6dffd0f,,Unknown Location,Unknown Location,,,,,,,,,,,,,,,,,
-44c3efb0-2583-4c80-a79e-1f756a03c0a1,,Outpatient Clinic,Outpatient Clinic,,Login Location,TRUE,,,,,,,,,,,,,,
-ba685651-ed3b-4e63-9b35-78893060758a,,Inpatient Ward,Inpatient Ward,,Login Location,,,,,,,,,,,,,,,
+44c3efb0-2583-4c80-a79e-1f756a03c0a1,,Outpatient Clinic,Outpatient Clinic,,Login Location; Appointment Location; Queue Location,TRUE,,,,,,,,,,,,,,
+ba685651-ed3b-4e63-9b35-78893060758a,,Inpatient Ward,Inpatient Ward,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
+2cf642d9-28db-4494-9651-792bbc04da2a,,Laboratory,Laboratory,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
+48cf0bb0-9a35-4702-8834-fe96d2d0faec,,Pharmacy,Pharmacy,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
+3774578e-381e-485a-a1be-6716bacd718a,,Ultrasound,Ultrasound,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
+231fff25-5049-41b7-b42d-cdcbfc4e2fe2,,ANC,ANC,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
+33e39394-a425-4b2a-9919-e0ade026ead8,,CWC,CWC,,Login Location; Appointment Location; Queue Location,,,,,,,,,,,,,,,
