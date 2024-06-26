@@ -28,13 +28,14 @@
     "@openmrs/esm-laboratory-app": "next",
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
-    "@openmrs/esm-form-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
-    "@sjthc/esm-patient-registration-app": "5.2.8",
-    "@sjthc/esm-patient-list-app": "1.1.1",
-    "@sjthc/esm-reports-app": "1.0.2",
+    "@openmrs/esm-radiology-app": "next",
+    "@sjthc/esm-patient-registration-app": "latest",
+    "@sjthc/esm-patient-list-app": "latest",
+    "@sjthc/esm-reports-app": "latest",
     "@sjthc/esm-billing-app": "latest",
-    "@sjthc/esm-service-queues-app": "1.0.8"
+    "@sjthc/esm-service-queues-app": "latest",
+    "@kenyaemr/esm-procedure-app": "next"
   },
   "excludedFrontendModules": []
 }
