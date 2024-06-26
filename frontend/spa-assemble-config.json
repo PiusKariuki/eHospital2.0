@@ -29,7 +29,6 @@
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
-    "@openmrs/esm-radiology-app": "next",
     "@sjthc/esm-patient-registration-app": "latest",
     "@sjthc/esm-patient-list-app": "latest",
     "@sjthc/esm-reports-app": "latest",
