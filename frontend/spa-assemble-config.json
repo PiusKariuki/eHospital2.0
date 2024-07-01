@@ -31,7 +31,7 @@
     "@openmrs/esm-form-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
     "@sjthc/esm-patient-registration-app": "5.2.8",
-    "@sjthc/esm-patient-list-app": "1.1.5",
+    "@sjthc/esm-patient-list-app": "1.1.1",
     "@sjthc/esm-reports-app": "1.0.3",
     "@sjthc/esm-billing-app": "1.0.4",
     "@sjthc/esm-service-queues-app": "1.0.8",
