@@ -31,10 +31,12 @@
     "@openmrs/esm-stock-management-app": "next",
     "@sjthc/esm-patient-registration-app": "latest",
     "@sjthc/esm-patient-list-app": "latest",
-    "@sjthc/esm-reports-app": "latest",
+    "@sjthc/esm-reports-app": "1.0.2",
     "@sjthc/esm-billing-app": "latest",
     "@sjthc/esm-service-queues-app": "latest",
-    "@kenyaemr/esm-procedure-app": "next"
+    "@kenyaemr/esm-procedure-app": "next",
+    "@sjthc/esm-admin-nav-app": "latest",
+    "@sjthc/esm-import-export-app": "latest"
   },
   "excludedFrontendModules": []
 }
