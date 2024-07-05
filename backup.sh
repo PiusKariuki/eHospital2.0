@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Load environment variables from .env file
+if [ -f .env ]; then
+  export $(cat .env | xargs)
+else
+  echo ".env file not found."
+  exit 1
+fi
+
 # Variables
-DB_CONTAINER="ehospital20-db-1"
-DB_USER="root"
-DB_PASS="openmrs"
-DB_NAME="openmrs"
 BACKUP_DIR="/opt"
 DATE=$(date +%d%m%Y_%H%M%S)
 BACKUP_FILE="SJH_DATA_BACKUP_${DATE}.sql"
