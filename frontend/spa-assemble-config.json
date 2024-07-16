@@ -6,6 +6,7 @@
     "@openmrs/esm-primary-navigation-app": "next",
     "@openmrs/esm-home-app": "next",
     "@openmrs/esm-form-engine-app": "next",
+    "@openmrs/esm-form-builder-app": "next",
     "@openmrs/esm-generic-patient-widgets-app": "next",
     "@openmrs/esm-patient-allergies-app": "next",
     "@openmrs/esm-patient-attachments-app": "next",
@@ -29,12 +30,14 @@
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
+    "@kenyaemr/esm-procedure-app": "next",
     "@sjthc/esm-patient-registration-app": "latest",
     "@sjthc/esm-patient-list-app": "latest",
     "@sjthc/esm-reports-app": "latest",
     "@sjthc/esm-billing-app": "latest",
     "@sjthc/esm-service-queues-app": "latest",
-    "@kenyaemr/esm-procedure-app": "next"
+    "@sjthc/esm-admin-nav-app": "latest",
+    "@sjthc/esm-import-export-app": "latest"
   },
   "excludedFrontendModules": []
 }
