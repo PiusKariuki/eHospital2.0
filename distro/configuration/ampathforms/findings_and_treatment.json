@@ -235,7 +235,7 @@
             {
               "label": "Add Comment",
               "type": "obsGroup",
-              "required": true,
+              "required": false,
               "id": "generalExaminationAddComment",
               "questionOptions": {
                 "rendering": "repeating",
@@ -284,7 +284,7 @@
             {
               "label": "Add Comment",
               "type": "obsGroup",
-              "required": true,
+              "required": false,
               "id": "systemicExaminationAddComment",
               "questionOptions": {
                 "rendering": "repeating",
@@ -401,7 +401,7 @@
             {
               "label": "Add Comment",
               "type": "obsGroup",
-              "required": true,
+              "required": false,
               "id": "tcaAddComment",
               "questionOptions": {
                 "rendering": "repeating",
