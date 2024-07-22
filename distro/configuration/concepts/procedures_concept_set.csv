@@ -1,0 +1,33 @@
+Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:3,_order:300
+165418AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"Wound Dressing Small;
+Wound Dressing medium;
+Wound Dressing big;
+Suturing Small;
+Suturing Medium;
+Suturing Big;
+Incision and Drainage(I & D);
+Removal of Stitches;
+Removal of Foreign Body;
+Removal of Implant;
+IUCD Removal;
+Manual Vacuum Aspiration(MVA);
+Speculum Examination;
+Nebulization;
+Vaginal Examination;
+Digital Rectal Examination;
+Cannulation;
+Catheterization;
+Ear Syringing;
+Eye Irrigation;
+Ganglion Removal;
+Circumcision Child;
+Circumcision Adult;
+Episiotomy/Tear Repair;
+Manual Removal Of Placenta;
+Nenatal Resuscitation;
+Delivery;
+Nasogastric Tube Insertion;
+Tongue Tie Release;
+Ingrown Toenail Removal;
+Phototherapy for Jaundice;
+Pap Smear Sample Collection",Procedure sequence construct,ConvSet,N/A,,
