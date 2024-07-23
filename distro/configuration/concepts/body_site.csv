@@ -1,0 +1,33 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Fully specified name:fr,Short name:en,Short name:fr,Description:en,Description:fr,Data class,Data type,Answers,Members,_version:1,_order:1001
+160495AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,SNOMED NP:71836000; SNOMED CT:181200003;CIEL:160495,Nasopharynx,,Nasopharynx,,Body structure,,Anatomy,N/A,,,,
+162669AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:181216001;	
+SNOMED NP:39607008;	
+CIEL:162669",Lung,,Lung,,Body structure,,Anatomy,N/A,,,,
+162670AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:181246003;
+CIEL:162670;	
+SNOMED NP:69695003",Stomach,,Stomach,,Body structure,,Anatomy,N/A,,,,
+162671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:256876008;
+SNOMED NP:113276009;      
+CIEL:162671",Intestine,,Intestine,,Body structure,,Anatomy,N/A,,,,
+162671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:256876008;
+SNOMED NP:113276009;
+CIEL:162671",Vagina,,Vagina,,Body structure,,Anatomy,N/A,,,,
+162919AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162919;
+SNOMED CT:122489005	",Urinary system structure,,Urinary system structure,,Body structure,,Anatomy,N/A,,,,
+162920AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162920;
+SNOMED NP:39937001",Intravenous line insertion site,,Intravenous line insertion site,,The physical part of the skin where an IV line was inserted. This is not a question which receives an answer of a particular location.,,Anatomy,N/A,,,,
+120202AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:120202;
+SNOMED CT:116224001;	
+IMO ProblemIT:197237;
+ICD-10-WHO:T81.9",Complication of Procedure,,Complication of Procedure,,,,Diagnosis,N/A,,,,
+120198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:88797001;
+ICD-10-WHO:T81.9;
+PIH:7881;
+SNOMED NP:385486001;	
+CIEL:120198;
+IMO ProblemIT:23052",Complication of Surgical Procedure,,Complication of Surgical Procedure,,,,Diagnosis,Coded,"Cardiac Arrest During and/or Resulting from a Procedure;
+Myocardial Infarction;
+Unplanned intubation for respiratory/cardiac failure;
+Intraoperative Death;
+None;
+Other",,,
