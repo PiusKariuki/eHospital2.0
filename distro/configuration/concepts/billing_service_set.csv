@@ -1,8 +1,8 @@
-Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:1,_order:301
+Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:600,_order:390
 21b8cf43-9f9f-4d02-9f4a-d710ece54261,,"Dental;
 UltraSound;
 Consultation;
 Outpatient;
 Inpatient;
 Pharmacy;
-Laboratory",Services,ConvSet,N/A,,
+Laboratory",Billing Services,ConvSet,N/A,,
