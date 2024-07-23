@@ -14,6 +14,7 @@ COPY spa-build-config.json .
 COPY /assets /app/assets
 
 ARG CACHE_BUST
+RUN npm install -g npm@10.8.2
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 
