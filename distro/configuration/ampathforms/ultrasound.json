@@ -113,7 +113,7 @@
                     "id": "referralImageFormProvided",
                     "questionOptions": {
                         "concept": "a7a1f899-135b-49b3-a1fe-d9ef0b50c40b",
-                        "showDate": "true",
+                        "showDate": "false",
                         "rendering": "file",
                         "shownDateOptions": {
                             "validators": [
