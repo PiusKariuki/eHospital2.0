@@ -20,14 +20,3 @@ SNOMED NP:39937001",Intravenous line insertion site,,Intravenous line insertion 
 SNOMED CT:116224001;	
 IMO ProblemIT:197237;
 ICD-10-WHO:T81.9",Complication of Procedure,,Complication of Procedure,,,,Diagnosis,N/A,,,,
-120198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:88797001;
-ICD-10-WHO:T81.9;
-PIH:7881;
-SNOMED NP:385486001;	
-CIEL:120198;
-IMO ProblemIT:23052",Complication of Surgical Procedure,,Complication of Surgical Procedure,,,,Diagnosis,Coded,"Cardiac Arrest During and/or Resulting from a Procedure;
-Myocardial Infarction;
-Unplanned intubation for respiratory/cardiac failure;
-Intraoperative Death;
-None;
-Other",,,
