@@ -3,12 +3,6 @@ Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_versi
 61f9ac9f-4743-4f95-bd83-02881612083c,,Referred From other facility,Referred From other facility,,,,,Misc,N/A,
 9b31621c-17c2-46c7-98ce-051dc8564dc7,,Referred from Within,Referred from Within,,,,,Misc,N/A,
 ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
-44335370-b96b-405e-97ad-ea4d4451a2ca,,Type of facility referred from,Type of facility referred from,"If patient was referred to this facility, record as 
-per 1=CU, 2=From other facility, 3= Within ,4=N/A",,,,Misc,Coded,"Revisit;
-Referred from Community Unit;
-Referred From other facility;
-Referred from Within;
-N/A"
 140425BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB,,Name of facility Referred from,Name of facility Referred from,,,,,Question,Text,
 5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Systolic Blood Pressure,Systolic Blood Pressure,,,,,Finding,Numeric,
 5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,Diastolic Blood Pressure,Diastolic Blood Pressure,,,,,Finding,Numeric,
@@ -64,12 +58,4 @@ provided i.e: 1=Nutrition assessment,
 3= Nutrition supplements",,,,Question,Coded,"Nutrition assessment;
 Nutrition education;
 Nutrition supplements"
-4ca6ae87-7a34-4079-a67b-7107156f30e8,,Referred to Community Unit,Referred to Community Unit,,,,,Misc,N/A,
- ffc9af40-cfb6-4edf-89a8-d478a1ed00f6,,Referred to other facility,Referred to other facility,,,,,Misc,N/A,
-76252f2b-4a80-4414-a630-a2bee89c00a0,,Referred Within,Referred Within,,,,,Misc,N/A,
- ccda26b2-a73f-4dcb-be03-1572eb6cf7b9,,N/A,N/A,,,,,Misc,N/A,
-a9b68c20-8ace-459a-8e7b-68c9a8487aba,,Type of facility referred to,Type of facility referred to,,,,,Question,Coded,"Referred to Community Unit;
-Referred to other facility;
-Referred Within;
-N/A"
 2c69e8af-4500-4bf2-b8f6-0d38d5c546ad,,Referred to other facility Specify,Referred to other facility Specify,,,,,Question,Text,
