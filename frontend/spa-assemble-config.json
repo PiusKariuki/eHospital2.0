@@ -36,8 +36,8 @@
     "@sjthc/esm-billing-app": "next",
     "@sjthc/esm-service-queues-app": "latest",
     "@kenyaemr/esm-procedure-app": "next",
-    "@sjthc/esm-admin-nav-app": "1.0.2",
-    "@sjthc/esm-import-export-app": "1.0.3"
+    "@sjthc/esm-admin-nav-app": "latest",
+    "@sjthc/esm-import-export-app": "latest"
   },
   "excludedFrontendModules": []
 }
