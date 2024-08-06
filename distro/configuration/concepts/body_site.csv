@@ -9,9 +9,7 @@ SNOMED NP:69695003",Stomach,,Stomach,,Body structure,,Anatomy,N/A,,,,
 162671AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:256876008;	
 SNOMED NP:113276009;	
 CIEL:162671",Intestine,,Intestine,,Body structure,,Anatomy,N/A,,,,
-162673AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED CT:181441005	
-CIEL:162673;
-SNOMED NP:76784001	",Vagina B/S,,Vagina B/S,,Body structure,,Anatomy,N/A,,,,
+162673AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,, ,Vagina,,Vagina,,Body structure,,Anatomy,N/A,,,,
 162919AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162919;
 SNOMED CT:122489005	",Urinary system structure,,Urinary system structure,,Body structure,,Anatomy,N/A,,,,
 162920AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"CIEL:162920;
@@ -25,11 +23,11 @@ CIEL:162668",Bleeding site,,Bleeding site,,Question identifying site of bleeding
 Lung;
 Stomach;
 Intestine;
-Vagina B/S;
+Vagina;
 Urinary system structure;
 Intravenous line insertion site;
 Complication of Procedure;
-Other;
+Other non-coded;
 Unknown",,,
 145884AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"IMO ProblemIT:15625;
 3BT:10000766;	
