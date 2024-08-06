@@ -121,7 +121,7 @@
               "questionOptions": {
                 "rendering": "workspace-launcher",
                 "buttonLabel": "Add Medication",
-                "workspaceName": "add-lab-order",
+                "workspaceName": "add-drug-order",
                 "concept": "a-system-defined-concept-uuid"
               }
             }

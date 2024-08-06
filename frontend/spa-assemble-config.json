@@ -30,6 +30,7 @@
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-stock-management-app": "next",
     "@openmrs/esm-help-menu-app": "next",
+    "@openmrs/esm-form-builder-app": "next",
     "@sjthc/esm-patient-registration-app": "next",
     "@sjthc/esm-patient-list-app": "next",
     "@sjthc/esm-reports-app": "next",
