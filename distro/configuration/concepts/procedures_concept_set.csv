@@ -30,7 +30,16 @@ Nasogastric Tube Insertion;
 Tongue Tie Release;
 Ingrown Toenail Removal;
 Phototherapy for Jaundice;
-Pap Smear Sample Collection",Procedure sequence construct,ConvSet,N/A,,
+Pap Smear Sample Collection;
+Splinting;
+Secondary Repare of episiotomy;
+Prepuse retruction;
+Medical Report;
+Medical Form;
+Medical Certificate;
+Death Certification/Confirmation;
+Via Vili;
+Excision (Minor)",Procedure sequence construct,ConvSet,N/A,,
 a1ae8ab5-6a2c-409f-a7ab-c507fdf7db76,,"Wound Dressing Small;
 Wound Dressing medium;
 Wound Dressing big;
@@ -62,10 +71,19 @@ Nasogastric Tube Insertion;
 Tongue Tie Release;
 Ingrown Toenail Removal;
 Phototherapy for Jaundice;
-Pap Smear Sample Collection",Procedures,ConvSet,N/A,,
+Pap Smear Sample Collection;
+Splinting;
+Secondary Repare of episiotomy;
+Prepuse retruction;
+Medical Report;
+Medical Form;
+Medical Certificate;
+Death Certification/Confirmation;
+Via Vili;
+Excision (Minor)",Procedures,ConvSet,N/A,,
 120198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,"Cardiac Arrest During and/or Resulting from a Procedure;
 Myocardial Infarction;
 Unplanned intubation for respiratory/cardiac failure;
 Intraoperative Death;
 None;
-Other",,Complication of Surgical Procedure,Diagnosis,Coded,,
+Other non-coded",,Complication of Surgical Procedure,Diagnosis,Coded,,
