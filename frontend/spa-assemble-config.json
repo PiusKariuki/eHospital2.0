@@ -36,7 +36,7 @@
     "@sjthc/esm-reports-app": "next",
     "@sjthc/esm-billing-app": "next",
     "@sjthc/esm-service-queues-app": "1.1.1",
-    "@sjthc/esm-procedure-app": "next",
+    "@sjthc/esm-procedure-app": "latest",
     "@sjthc/esm-admin-nav-app": "latest",
     "@sjthc/esm-import-export-app": "latest"
   },
