@@ -26,7 +26,6 @@
     <fhir2.version>2.0.0</fhir2.version>
     <openmrs.version>2.6.5</openmrs.version>
     <initializer.version>2.7.0-SNAPSHOT</initializer.version>
-    <webservices.rest.version>2.43.0</webservices.rest.version>
     <addresshierarchy.version>2.17.0</addresshierarchy.version>
     <idgen.version>4.10.0</idgen.version>
     <legacyui.version>1.16.0</legacyui.version>
@@ -70,12 +69,6 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>fhir2-omod</artifactId>
       <version>${fhir2.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>webservices.rest-omod</artifactId>
-      <version>${webservices.rest.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
