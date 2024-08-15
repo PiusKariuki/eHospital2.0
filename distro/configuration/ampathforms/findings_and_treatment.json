@@ -15,7 +15,7 @@
             {
               "label": "Patient referred from another facility?",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "isPatientReferred",
               "questionOptions": {
                 "rendering": "radio",
@@ -35,7 +35,7 @@
             {
               "label": "Type of facility referred from",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "facilityRefferedFrom",
               "questionOptions": {
                 "rendering": "select",
@@ -65,7 +65,7 @@
             },
             {
               "label": "Specify Facility referred from",
-              "required": false,
+              "required": true,
               "id": "facilityReferredFromSpecify",
               "questionOptions": {
                 "rendering": "text",
@@ -233,15 +233,27 @@
               }
             },
             {
-              "label": "General Examination Comment",
-              "id": "generalExaminationComment",
-              "type": "obs",
+              "label": "Add Comment",
+              "type": "obsGroup",
               "required": false,
+              "id": "generalExaminationAddComment",
               "questionOptions": {
-                "rendering": "textarea",
-                "rows": 5,
-                "concept": "daf8e0c0-ef5b-4568-8564-6a57358e1756"
-              }
+                "rendering": "repeating",
+                "concept": "b2eb5496-e708-44ad-bce4-8a976941ca44"
+              },
+              "questions": [
+                {
+                  "label": "General Examination Comment",
+                  "id": "generalExaminationComment",
+                  "type": "obs",
+                  "required": false,
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "rows": 5,
+                    "concept": "daf8e0c0-ef5b-4568-8564-6a57358e1756"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -270,15 +282,27 @@
               }
             },
             {
-              "label": "Systemic Examination Comment",
-              "id": "systemicExaminationComment",
-              "type": "obs",
+              "label": "Add Comment",
+              "type": "obsGroup",
               "required": false,
+              "id": "systemicExaminationAddComment",
               "questionOptions": {
-                "rendering": "textarea",
-                "rows": 5,
-                "concept": "d5771e6e-0f9c-4d3f-b9ab-56e545bc3e10"
-              }
+                "rendering": "repeating",
+                "concept": "98554c7b-cdec-41cb-b1f6-10972a6139b2"
+              },
+              "questions": [
+                {
+                  "label": "Systemic Examination Comment",
+                  "id": "systemicExaminationComment",
+                  "type": "obs",
+                  "required": false,
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "rows": 5,
+                    "concept": "d5771e6e-0f9c-4d3f-b9ab-56e545bc3e10"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -307,7 +331,7 @@
               "label": "Impressions/Diagnosis",
               "id": "impressionsDiagnosis",
               "type": "obs",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "rendering": "textarea",
                 "rows": 5,
@@ -363,7 +387,7 @@
             },
             {
               "label": "Please place an appointment for the Patient",
-              "required": false,
+              "required": true,
               "id": "appointmentWorkspaceLauncher",
               "questionOptions": {
                 "rendering": "workspace-launcher",
@@ -375,15 +399,27 @@
               }
             },
             {
-              "label": "TCA",
-              "id": "tcaComment",
-              "type": "obs",
+              "label": "Add Comment",
+              "type": "obsGroup",
               "required": false,
+              "id": "tcaAddComment",
               "questionOptions": {
-                "rendering": "textarea",
-                "rows": 5,
-                "concept": "d08b33dd-d807-460a-a91e-049c30b7a0aa"
-              }
+                "rendering": "repeating",
+                "concept": "7619cf81-313d-4fcd-bdb1-57f94c376d58"
+              },
+              "questions": [
+                {
+                  "label": "TCA",
+                  "id": "tcaComment",
+                  "type": "obs",
+                  "required": false,
+                  "questionOptions": {
+                    "rendering": "textarea",
+                    "rows": 5,
+                    "concept": "d08b33dd-d807-460a-a91e-049c30b7a0aa"
+                  }
+                }
+              ]
             }
           ]
         }
@@ -397,22 +433,9 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Caregiver’s Telephone No.",
-              "required": false,
-              "id": "careGiverTelephone",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "109096BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
-              },
-              "validators": [],
-              "hide": {
-                "hideWhenExpression": "age > 5"
-              }
-            },
-            {
               "label": "Danger signs baby",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "dangerSignsBaby",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -446,7 +469,7 @@
             },
             {
               "label": "Duration of Illness (days)",
-              "required": false,
+              "required": true,
               "id": "durationOfIllness",
               "questionOptions": {
                 "rendering": "number",
@@ -467,7 +490,7 @@
             {
               "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "suspectedMalariaCases",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -498,7 +521,7 @@
             {
               "label": "Tracer Drugs Prescribed",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "tracerDrugsPrescribed",
               "questionOptions": {
                 "rendering": "multiCheckbox",
@@ -544,7 +567,7 @@
             },
             {
               "label": "IMNCI Classifications or Diagnosis",
-              "required": false,
+              "required": true,
               "id": "imnciClassification",
               "questionOptions": {
                 "rendering": "text",
@@ -591,7 +614,7 @@
             {
               "label": "Immunization status up to date",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "immunizationUpToDate",
               "questionOptions": {
                 "rendering": "select",
@@ -614,7 +637,7 @@
             {
               "label": "TB Screening",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "tbScreening",
               "questionOptions": {
                 "rendering": "select",
@@ -641,7 +664,7 @@
             {
               "label": "Nutrition and diatetics",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "nutritionAndDietetics",
               "questionOptions": {
                 "rendering": "select",
@@ -677,7 +700,7 @@
             {
               "label": "Visual acuity right eye",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "visualAcuityRightEye",
               "questionOptions": {
                 "rendering": "text",
@@ -691,7 +714,7 @@
             {
               "label": "Visual acuity left eye",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "visualAcuityLeftEye",
               "questionOptions": {
                 "rendering": "text",
@@ -714,7 +737,7 @@
             {
               "label": "Screened for tuberculosis",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "tbScreeningAdults",
               "questionOptions": {
                 "rendering": "select",
@@ -745,7 +768,7 @@
             {
               "label": "Suspected Malaria cases(all clients presenting with symptoms of Malaria)",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "suspectedMalariaCasesAdults",
               "questionOptions": {
                 "rendering": "checkbox",
@@ -776,7 +799,7 @@
             {
               "label": "Diagnosis",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "diagnosisAdults",
               "questionOptions": {
                 "rendering": "text",
@@ -790,7 +813,7 @@
             {
               "label": "Record the name of  Drugs from the prescription or drug codes if provided",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "nameOfDrugs",
               "questionOptions": {
                 "rendering": "text",
@@ -804,7 +827,7 @@
             {
               "label": "Prescription",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "prescriptionAdults",
               "questionOptions": {
                 "rendering": "text",
@@ -818,7 +841,7 @@
             {
               "label": "Nutritional interventions provided ",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "nutritionInterventions",
               "questionOptions": {
                 "rendering": "select",
@@ -856,7 +879,7 @@
             {
               "label": "Is Patient being referred to Another facility?",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "isBeingPatientReferred",
               "questionOptions": {
                 "rendering": "radio",
@@ -876,7 +899,7 @@
             {
               "label": "Type of facility referred to",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "typeOfFacilityReferredToAdults",
               "questionOptions": {
                 "rendering": "select",
@@ -906,7 +929,7 @@
             },
             {
               "label": "Specify Facility referred to",
-              "required": false,
+              "required": true,
               "id": "facilityReferredToSpecify",
               "questionOptions": {
                 "rendering": "text",
@@ -920,7 +943,7 @@
             },
             {
               "label": "REMARKS/Outome",
-              "required": false,
+              "required": true,
               "id": "remarks",
               "questionOptions": {
                 "rendering": "text",
