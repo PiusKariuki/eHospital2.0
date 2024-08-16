@@ -93,7 +93,7 @@
               "id": "studentAdmissionNumber",
               "type": "person attribute",
               "uuid": "f5e5a725-fc9f-47d2-8d43-4af8bcda9cfc",
-              "label": "Students Student's Nemis"
+              "label": "Students Admission Number"
             },
             {
               "id": "foundationName",
