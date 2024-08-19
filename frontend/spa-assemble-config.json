@@ -39,7 +39,7 @@
     "@sjthc/esm-procedure-app": "next",
     "@sjthc/esm-admin-nav-app": "latest",
     "@sjthc/esm-import-export-app": "latest",
-    "@sjthc/esm-patient-visits-report-app": "1.1.4"
+    "@sjthc/esm-patient-visits-report-app": "1.1.9"
   },
   "excludedFrontendModules": []
 }
