@@ -7,3 +7,4 @@ b2c38640-2603-4629-aebd-3b54f33f1e3a,,Contact Number,The contact number for the 
 b8d0b331-1d2d-4a9a-b741-1816f498bdb6,,Email Address,The Email Address of the person,^[\w-\.]+@([\w-]+\.)+[\w-]{4}$,,,
 f9c39d6c-9893-4474-8070-ef592f2be875,,Foundation,the Foundation of the students,java.lang.String,,yes,
 f5e5a725-fc9f-47d2-8d43-4af8bcda9cfc,,Student's Nemis Number,the Students Nemis number,java.lang.String,,yes,
+45cf1f6a-00bb-414b-a767-d00b01bf3fb3,,Specify relationship,Specify the relationship if it doesn't fall under the given options,java.lang.String,,,,,
