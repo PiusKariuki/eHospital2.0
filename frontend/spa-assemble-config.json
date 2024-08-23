@@ -32,7 +32,7 @@
     "@openmrs/esm-help-menu-app": "next",
     "@openmrs/esm-form-builder-app": "next",
     "@sjthc/esm-patient-registration-app": "next",
-    "@sjthc/esm-patient-list-app": "next",
+    "@sjthc/esm-patient-list-app": "1.2.5",
     "@sjthc/esm-reports-app": "next",
     "@sjthc/esm-billing-app": "next",
     "@sjthc/esm-service-queues-app": "1.1.1",

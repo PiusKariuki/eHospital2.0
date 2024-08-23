@@ -18,7 +18,7 @@ SNOMED NP:39937001",Intravenous line insertion site,,Intravenous line insertion 
 SNOMED CT:116224001;	
 IMO ProblemIT:197237;
 ICD-10-WHO:T81.9",Complication of Procedure,,Complication of Procedure,,,,Diagnosis,N/A,,,,
-162668AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED NP:364684009;	
+162668AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,"SNOMED NP:364684009;        
 CIEL:162668",Bleeding site,,Bleeding site,,Question identifying site of bleeding,,Question,Coded,"Nasopharynx;
 Lung;
 Stomach;
@@ -102,3 +102,4 @@ Serum;
 Sputum;
 Urine;
 Whole blood sample",,
+d641e616-886d-4493-8b4d-c50bcd29b980,,,Other Body Site,,,,,,Question,Text,,,,
