@@ -598,7 +598,6 @@
               "required": false,
               "questionOptions": {
                 "rendering": "text",
-                "rows": 5,
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
