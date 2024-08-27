@@ -309,7 +309,7 @@
               "type": "obs",
               "required": true,
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "759bf916-5549-4fe1-a588-a399ba04dfd5",
                 "answers": [
                   {
@@ -597,7 +597,7 @@
               "type": "obs",
               "required": true,
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "759bf916-5549-4fe1-a588-a399ba04dfd5",
                 "answers": [
                   {
@@ -863,6 +863,10 @@
                   {
                     "concept": "81a94f45-a08a-439e-9daa-d48b4185dcdf",
                     "label": "Suspected Anthrax"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other Diseases"
                   }
                 ]
               },
@@ -873,7 +877,7 @@
             },
             {
               "label": "Diagnosis Other",
-              "id": "diagnosisOther",
+              "id": "diagnosisOtherChildrenSpecify",
               "type": "obs",
               "required": false,
               "questionOptions": {
@@ -881,7 +885,20 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "impressionsDiagnosisChildren !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  impressionsDiagnosisAdults !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "impressionsDiagnosisChildren !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
+            },
+            {
+              "label": "Diagnosis Other",
+              "id": "diagnosisOtherAdultsSpecify",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
+              },
+              "hide": {
+                "hideWhenExpression": "impressionsDiagnosisAdults !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -1113,7 +1130,7 @@
               }
             },
             {
-              "label": "IMNCI Classifications or Diagnosis",
+              "label": "IMNCI Classifications",
               "required": false,
               "id": "imnciClassification",
               "questionOptions": {
@@ -1339,20 +1356,6 @@
                   }
                 ]
               },
-              "hide": {
-                "hideWhenExpression": "age <= 5"
-              }
-            },
-            {
-              "label": "Diagnosis",
-              "type": "obs",
-              "required": false,
-              "id": "diagnosisAdults",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "aa295620-4576-4459-93ae-00bac0de4c77"
-              },
-              "validators": [],
               "hide": {
                 "hideWhenExpression": "age <= 5"
               }
