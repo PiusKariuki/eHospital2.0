@@ -114,18 +114,6 @@
             "month": 5
           }
         },
-        "gender": [
-          {
-            "id": "male",
-            "value": "Male",
-            "label": "Male"
-          },
-          {
-            "id": "female",
-            "value": "Female",
-            "label": "Female"
-          }
-        ],
         "address": {
           "useAddressHierarchy": {
             "useAddressHierarchyLabel": {
