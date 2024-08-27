@@ -885,7 +885,7 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "impressionsDiagnosisChildren !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
               }
             },
             {
@@ -898,7 +898,7 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "impressionsDiagnosisAdults !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "!arrayContains(impressionsDiagnosisAdults, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
               }
             }
           ]
