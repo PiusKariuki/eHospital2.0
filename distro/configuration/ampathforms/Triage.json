@@ -157,72 +157,72 @@
           "questions": [
             {
               "label": "Weight(kg):",
-              "type": "obs",
               "id": "weight",
+              "type": "obs",
               "required": "true",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "max": "250",
                 "min": "0"
               },
-              "historicalExpression": "HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": "age > 5"
               }
             },
             {
               "label": "Weight(kg):",
-              "type": "obs",
               "id": "weightForBMI",
+              "type": "obs",
               "required": "true",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "max": "250",
                 "min": "0"
               },
-              "historicalExpression": "HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
                 "hideWhenExpression": "age <= 5"
               }
             },
             {
               "label": "Height(cm):",
+              "id": "height",
               "type": "obs",
               "required": "true",
-              "id": "height",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "max": "272",
                 "min": "10"
               },
-              "historicalExpression": "HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": "age > 5"
               }
             },
             {
               "label": "Height(cm):",
+              "id": "heightForBMI",
               "type": "obs",
               "required": "true",
-              "id": "heightForBMI",
+              "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "max": "272",
                 "min": "10"
               },
-              "historicalExpression": "HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "hide": {
                 "hideWhenExpression": "age <= 5"
               }
             },
             {
               "label": "BMI (Kg/m2)",
-              "type": "obs",
               "id": "bmi",
+              "type": "obs",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -238,15 +238,15 @@
             },
             {
               "label": "MUAC",
-              "type": "obs",
               "id": "muac",
+              "type": "obs",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0"
               },
               "hide": {
-                "hideWhenExpression": "!(age >= 0 && age <=5)"
+                "hideWhenExpression": "age > 5 && sex ==='M'"
               }
             }
           ]

@@ -876,7 +876,33 @@
               }
             },
             {
-              "label": "Diagnosis Other",
+              "label": "OTHER MENINGITIS Specify",
+              "id":"otherMenigitisChildrenSpecify",
+              "type": "obs",
+              "required":false,
+              "questionOptions":{
+                "rendering":"textarea",
+                "concept":"b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              },
+              "hide":{
+                "hideWhenExpression":"!arrayContains(impressionsDiagnosisChildren, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              }
+            },
+            {
+              "label": "OTHER MENINGITIS Specify",
+              "id":"otherMenigitisAdultSpecify",
+              "type": "obs",
+              "required":false,
+              "questionOptions":{
+                "rendering":"textarea",
+                "concept":"b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              },
+              "hide":{
+                "hideWhenExpression":"!arrayContains(impressionsDiagnosisChildren, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              }
+            },
+            {
+              "label": "Other Diagnosis Specify",
               "id": "diagnosisOtherChildrenSpecify",
               "type": "obs",
               "required": false,
@@ -885,11 +911,11 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "!arrayContains(impressionsDiagnosisAdults, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
               }
             },
             {
-              "label": "Diagnosis Other",
+              "label": "Other Diagnosis Specify",
               "id": "diagnosisOtherAdultsSpecify",
               "type": "obs",
               "required": false,
