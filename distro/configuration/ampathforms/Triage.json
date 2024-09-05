@@ -71,7 +71,7 @@
               "required": false,
               "questionOptions": {
                 "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "25"
               },
               "alert": {
@@ -85,7 +85,7 @@
               "id": "pulseRate",
               "questionOptions": {
                 "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
@@ -99,7 +99,7 @@
               "id": "sysBP",
               "questionOptions": {
                 "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
@@ -113,7 +113,7 @@
               "id": "diasBP",
               "questionOptions": {
                 "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
@@ -127,7 +127,7 @@
               "id": "respRate",
               "questionOptions": {
                 "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
@@ -141,7 +141,7 @@
               "id": "oxygenSat",
               "questionOptions": {
                 "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "min": "0"
               },
               "alert": {
@@ -163,7 +163,7 @@
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "max": "250",
                 "min": "0"
               },
@@ -179,7 +179,7 @@
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "max": "250",
                 "min": "0"
               },
@@ -195,7 +195,7 @@
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "max": "272",
                 "min": "10"
               },
@@ -211,7 +211,7 @@
               "historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')) ? undefined : HD.getObject('prevEnc').getValue('5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
+                "rendering": "numeric",
                 "max": "272",
                 "min": "10"
               },
@@ -224,7 +224,7 @@
               "id": "bmi",
               "type": "obs",
               "questionOptions": {
-                "rendering": "number",
+                "rendering": "numeric",
                 "concept": "1342AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "max": "100",
                 "min": "0",
@@ -241,7 +241,7 @@
               "id": "muac",
               "type": "obs",
               "questionOptions": {
-                "rendering": "number",
+                "rendering": "numeric",
                 "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0"
               },
