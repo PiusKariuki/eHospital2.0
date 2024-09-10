@@ -876,29 +876,29 @@
               }
             },
             {
-              "label": "OTHER MENINGITIS Specify",
-              "id":"otherMenigitisChildrenSpecify",
+              "label": "Other Menengitis Specify",
+              "id": "otherMenigitisChildrenSpecify",
               "type": "obs",
-              "required":false,
-              "questionOptions":{
-                "rendering":"textarea",
-                "concept":"b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
               },
-              "hide":{
-                "hideWhenExpression":"!arrayContains(impressionsDiagnosisAdults, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
               }
             },
             {
-              "label": "OTHER MENINGITIS Specify",
-              "id":"otherMenigitisAdultSpecify",
+              "label": "Other Menengitis Specify",
+              "id": "otherMenigitisAdultSpecify",
               "type": "obs",
-              "required":false,
-              "questionOptions":{
-                "rendering":"textarea",
-                "concept":"b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "b0fef4a0-a77b-4cce-8a1b-d60d2bcd6e8e"
               },
-              "hide":{
-                "hideWhenExpression":"!arrayContains(impressionsDiagnosisChildren, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
+              "hide": {
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '5f373b9c-93fe-4371-8fa8-39c05aed4323')"
               }
             },
             {
@@ -911,7 +911,7 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisAdults, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
               }
             },
             {
@@ -924,7 +924,7 @@
                 "concept": "410d7684-2045-4eff-9af3-1fb57a406123"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
               }
             },
             {
@@ -937,11 +937,11 @@
                 "concept": "4dbab2e3-d47d-49dc-8dbe-e9a83567f230"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisAdults, '988b26cc-369e-42bf-9162-4e5380a45342')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '988b26cc-369e-42bf-9162-4e5380a45342')"
               }
             },
             {
-              "label": "OTHER BITES Specify",
+              "label": "Other bites Specify",
               "id": "otherBitesChildrenSpecify",
               "type": "obs",
               "required": false,
@@ -950,11 +950,11 @@
                 "concept": "4b503f44-f9ff-4444-a8bd-2c928c3ae5c4"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
               }
             },
             {
-              "label": "OTHER BITES Specify",
+              "label": "Other bites Specify",
               "id": "otherBitesAdultsSpecify",
               "type": "obs",
               "required": false,
@@ -963,11 +963,11 @@
                 "concept": "4b503f44-f9ff-4444-a8bd-2c928c3ae5c4"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, '4bfbdee8-2574-4ed3-b9e3-295ae2bc6754')"
               }
             },
             {
-              "label": "OTHER INJURIES Specify",
+              "label": "Other injuries Specify",
               "id": "otherInjuriesChildrenSpecify",
               "type": "obs",
               "required": false,
@@ -976,11 +976,11 @@
                 "concept": "7e57cd52-4bd0-45ed-9dd1-582dfe7cad60"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisAdults, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisChildren) || !arrayContains(impressionsDiagnosisChildren, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
               }
             },
             {
-              "label": "OTHER INJURIES Specify",
+              "label": "Other injuries Specify",
               "id": "otherInjuriesAdultsSpecify",
               "type": "obs",
               "required": false,
@@ -989,11 +989,11 @@
                 "concept": "7e57cd52-4bd0-45ed-9dd1-582dfe7cad60"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, 'cafabbfc-4776-4ff6-8c6d-4aee5c200ef4')"
               }
             },
             {
-              "label": "OTHER DIS. OF RESPIRATORY SYSTEM Specify",
+              "label": "Other disease of respiratory Specify",
               "id": "otherRespiratoryDiseaseAdultsSpecify",
               "type": "obs",
               "required": false,
@@ -1002,7 +1002,7 @@
                 "concept": "33d8508e-fdf0-499e-bf7a-a8cc2c1be09a"
               },
               "hide": {
-                "hideWhenExpression": "!arrayContains(impressionsDiagnosisChildren, 'a4744bfc-034f-46ff-8996-033bcbaa374d')"
+                "hideWhenExpression": "isEmpty(impressionsDiagnosisAdults) || !arrayContains(impressionsDiagnosisAdults, 'a4744bfc-034f-46ff-8996-033bcbaa374d')"
               }
             }
           ]
