@@ -11,7 +11,7 @@ fi
 # Variables
 BACKUP_DIR="/opt"
 DATE=$(date +%d%m%Y_%H%M%S)
-BACKUP_FILE="SJH_DATA_BACKUP_${DATE}.sql"
+BACKUP_FILE="OPENMRS_DATA_BACKUP_${DATE}.sql"
 LOCAL_DIR="$HOME/Data_Backup"
 
 # Check Docker container status
@@ -37,11 +37,17 @@ if [ ! -d "$LOCAL_DIR" ]; then
   fi
 fi
 
-# Identify the latest backup file
-LATEST_BACKUP=$(sudo docker exec $DB_CONTAINER ls -t $BACKUP_DIR | grep SJH_DATA_BACKUP_ | head -n 1)
+# Identify the latest backup file with the correct naming pattern
+LATEST_BACKUP=$(sudo docker exec $DB_CONTAINER ls -t $BACKUP_DIR | grep -E "^OPENMRS_DATA_BACKUP_[0-9]{8}_[0-9]{6}\.sql$" | head -n 1)
 
-# Copy the latest backup file to local directory
-sudo docker cp $DB_CONTAINER:$BACKUP_DIR/$LATEST_BACKUP $LOCAL_DIR/
+# Check if the latest backup file was identified correctly
+if [ -z "$LATEST_BACKUP" ]; then
+  echo "No backup file found matching the pattern."
+  exit 1
+fi
+
+# Copy the latest backup file to the local directory
+sudo docker cp "$DB_CONTAINER:$BACKUP_DIR/$LATEST_BACKUP" "$LOCAL_DIR/"
 if [ $? -ne 0 ]; then
   echo "Failed to copy backup file to local directory $LOCAL_DIR."
   exit 1

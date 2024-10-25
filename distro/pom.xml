@@ -47,6 +47,9 @@
     <ordertemplates.version>1.0.2</ordertemplates.version>
     <patientflags.version>3.0.7</patientflags.version>
     <o3forms.version>2.2.0</o3forms.version>
+    <!-- Stock Management and Billing -->
+    <stockmanagement.version>2.0.2-SNAPSHOT</stockmanagement.version>
+    <billing.version>1.2.0-SNAPSHOT</billing.version>
   </properties>
 
   <dependencies>
@@ -186,6 +189,18 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <dependency>
+    <groupId>org.openmrs.module</groupId>
+    <artifactId>stockmanagement-omod</artifactId>
+    <version>${stockmanagement.version}</version>
+    <scope>provided</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.openmrs.module</groupId>
+    <artifactId>billing-omod</artifactId>
+    <version>${billing.version}</version>
+    <scope>provided</scope>
+  </dependency>
 
   <build>
     <plugins>
