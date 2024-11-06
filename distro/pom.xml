@@ -188,19 +188,19 @@
       <version>${o3forms.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>stockmanagement-omod</artifactId>
+      <version>${stockmanagement.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>billing-omod</artifactId>
+      <version>${billing.version}</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
-  <dependency>
-    <groupId>org.openmrs.module</groupId>
-    <artifactId>stockmanagement-omod</artifactId>
-    <version>${stockmanagement.version}</version>
-    <scope>provided</scope>
-  </dependency>
-  <dependency>
-    <groupId>org.openmrs.module</groupId>
-    <artifactId>billing-omod</artifactId>
-    <version>${billing.version}</version>
-    <scope>provided</scope>
-  </dependency>
 
   <build>
     <plugins>
