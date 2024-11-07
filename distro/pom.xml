@@ -26,6 +26,7 @@
     <fhir2.version>2.0.0</fhir2.version>
     <openmrs.version>2.6.5</openmrs.version>
     <initializer.version>2.7.0</initializer.version>
+    <authentication.version>1.0.0</authentication.version>
     <addresshierarchy.version>2.17.0</addresshierarchy.version>
     <idgen.version>4.10.0</idgen.version>
     <legacyui.version>1.16.0</legacyui.version>
@@ -47,6 +48,9 @@
     <ordertemplates.version>1.0.2</ordertemplates.version>
     <patientflags.version>3.0.7</patientflags.version>
     <o3forms.version>2.2.0</o3forms.version>
+    <emrapi.version>2.1.0-SNAPSHOT</emrapi.version>
+    <event.version>2.10.0</event.version>
+    <bedmanagement.version>6.0.0</bedmanagement.version>
     <!-- Stock Management and Billing -->
     <stockmanagement.version>2.0.2-SNAPSHOT</stockmanagement.version>
     <billing.version>1.2.0-SNAPSHOT</billing.version>
@@ -66,6 +70,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>initializer-omod</artifactId>
       <version>${initializer.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>authentication-omod</artifactId>
+      <version>${authentication.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -186,6 +196,24 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>o3forms-omod</artifactId>
       <version>${o3forms.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>emrapi-omod</artifactId>
+      <version>${emrapi.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs</groupId>
+      <artifactId>event-omod</artifactId>
+      <version>${event.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>bedmanagement-omod</artifactId>
+      <version>${bedmanagement.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
