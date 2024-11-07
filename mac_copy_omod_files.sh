@@ -14,7 +14,7 @@ fi
 
 # Copy all .omod files from the source directory to the Docker volume
 echo "Copying .omod files from $SOURCE_DIR to Docker volume $DOCKER_VOLUME..."
-docker run --rm -v "$DOCKER_VOLUME:/data" -v "$(pwd)/$SOURCE_DIR:/host" busybox sh -c "cp /host/*.omod /data/modules/"
+sudo docker run --rm -v "$DOCKER_VOLUME:/data" -v "$(pwd)/$SOURCE_DIR:/host" busybox sh -c "cp /host/*.omod /data/modules/"
 
 # Verify if the copy was successful
 if [ $? -eq 0 ]; then
@@ -27,7 +27,7 @@ fi
 # Restart the Docker container
 DOCKER_SERVICE="backend"
 echo "Restarting Docker service: $DOCKER_SERVICE..."
-docker compose restart $DOCKER_SERVICE
+sudo docker compose restart $DOCKER_SERVICE
 
 # Verify if the restart was successful
 if [ $? -eq 0 ]; then
