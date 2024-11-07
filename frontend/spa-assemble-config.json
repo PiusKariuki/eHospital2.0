@@ -34,15 +34,15 @@
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-ward-app": "next",
     "@openmrs/esm-bed-management-app": "next",
-    "@sjthc/esm-patient-registration-app": "next",
-    "@sjthc/esm-patient-list-app": "1.2.5",
-    "@sjthc/esm-reports-app": "next",
-    "@sjthc/esm-billing-app": "next",
-    "@sjthc/esm-service-queues-app": "1.1.1",
-    "@sjthc/esm-procedure-app": "latest",
-    "@sjthc/esm-admin-nav-app": "latest",
-    "@sjthc/esm-import-export-app": "latest",
-    "@sjthc/esm-patient-visits-report-app": "1.2.5"
+    "@ehospital/esm-patient-registration-app": "1.0.0",
+    "@ehospital/esm-patient-list-app": "1.0.0",
+    "@ehospital/esm-reports-app": "1.0.0",
+    "@ehospital/esm-billing-app": "1.0.0",
+    "@ehospital/esm-service-queues-app": "1.0.0",
+    "@ehospital/esm-procedure-app": "1.0.0",
+    "@ehospital/esm-admin-nav-app": "1.0.0",
+    "@ehospital/esm-import-export-app": "1.0.0",
+    "@ehospital/esm-patient-visits-report-app": "1.0.0"
   },
   "excludedFrontendModules": []
 }
