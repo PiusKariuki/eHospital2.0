@@ -2,4 +2,6 @@ Uuid, Void/Retire, Service Name, Short Name, Concept, Service Type, Service Stat
 44ebd6cd-04ad-4eba-8ce1-0de4564bfd17,, Antenatal care, ANTC, 1592AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Antenatal Services, Enabled
 a0f7d8a1-4fa2-418c-aa8a-9b358f43d605,, Orthopedic Service, OTHS, 164949AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Orthopedic Services, Enabled
 16435ab4-27c3-4d91-b21e-52819bd654d8,, Nutrition counseling, NUC, 1380AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Nutrition Services, Enabled
-360fab13-d92b-4a9f-ad4e-0ac223e7f54c,, OPD consultation, OPDC, 160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Orthopedic Services, Enabled
+360fab13-d92b-4a9f-ad4e-0ac223e7f54c,, OPD consultation, OPDC, 160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Outpatient Services, Enabled
+a6790106-5e03-4f25-a9b8-277ddaa5737e,, Inpatient Consultation, INDP, 167050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Inpatient Servce, Enabled
+9335c794-3acf-470e-a671-3820acdb50af,, Dental Service, DS, 160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Dental Service, Enabled
