@@ -12,7 +12,7 @@
   "@openmrs/esm-primary-navigation-app": {
       "logo": {
           "src": "/openmrs/spa/primary-navigation.jpg"
-      },
+        },
     "extensionSlots": {
       "app-menu-slot": {
         "remove": [
