@@ -12,7 +12,16 @@
   "@openmrs/esm-primary-navigation-app": {
       "logo": {
           "src": "/openmrs/spa/primary-navigation.jpg"
+        },
+    "extensionSlots": {
+      "app-menu-slot": {
+        "remove": [
+          "dispensing-link",
+          "forms-app-link",
+          "system-administration-app-menu-link"
+        ]
       }
+    }
   },
   "@openmrs/esm-patient-chart-app": {
     "showUpcomingAppointments": true,
