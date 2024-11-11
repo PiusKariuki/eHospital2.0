@@ -40,7 +40,7 @@
     "@ehospital/esm-billing-app": "1.0.0",
     "@ehospital/esm-service-queues-app": "1.0.0",
     "@ehospital/esm-procedure-app": "1.0.0",
-    "@ehospital/esm-admin-nav-app": "1.0.0",
+    "@ehospital/esm-admin-nav-app": "1.0.5",
     "@ehospital/esm-import-export-app": "1.0.0",
     "@ehospital/esm-patient-visits-report-app": "1.0.0"
   },
