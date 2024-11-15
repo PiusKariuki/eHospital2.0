@@ -55,6 +55,7 @@
   ],
   "processor": "EncounterFormProcessor",
   "encounterType": "b2c4d5e6-7f8a-4e9b-8c1d-2e3f8e4a3b8f",
+  "encounter": "Admission form IPD",
   "referencedForms": [],
   "uuid": "43edc2e0-8418-4cb4-9cc0-63f137cdad50",
   "description": "Admission form IPD",
