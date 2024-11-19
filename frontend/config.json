@@ -34,7 +34,7 @@
         }
       }
   },
-  "@sjthc/esm-patient-registration-app": {
+  "@ehospital/esm-patient-registration-app": {
       "sectionDefinitions": [  
         {
           "id": "contact",
@@ -142,7 +142,7 @@
         }
       }
   },
-  "@sjthc/esm-service-queues-app": {
+  "@ehospital/esm-service-queues-app": {
     "priorityConfigs": [
       {
         "conceptUuid": "04f6f7e0-e3cb-4e13-a133-4479f759574e",
