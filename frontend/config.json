@@ -35,7 +35,18 @@
       }
   },
   "@ehospital/esm-patient-registration-app": {
-      "sectionDefinitions": [  
+      "sectionDefinitions": [
+        {
+          "id": "demographics",
+          "name": "Basic Info",
+          "fields": [
+            "name",
+            "gender",
+            "dob",
+            "id",
+            "shaNumber"
+          ]
+        },
         {
           "id": "contact",
           "name": "Contact Details",
@@ -61,6 +72,12 @@
           "students"
       ],
       "fieldDefinitions": [
+            {
+              "id": "shaNumber",
+              "type": "person attribute",
+              "uuid": "f40a470e-9e01-4bb3-8a89-3138640f0d6d",
+              "label": "SHA Number"
+            },
             {
               "id": "alternatePhone",
               "type": "person attribute",
