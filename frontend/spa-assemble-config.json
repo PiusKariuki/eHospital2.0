@@ -34,7 +34,7 @@
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-ward-app": "next",
     "@openmrs/esm-bed-management-app": "next",
-    "@ehospital/esm-billing-app": "1.0.4",
+    "@ehospital/esm-billing-app": "next",
     "@ehospital/esm-patient-registration-app": "next",
     "@ehospital/esm-patient-list-app": "next",
     "@ehospital/esm-reports-app": "next",
