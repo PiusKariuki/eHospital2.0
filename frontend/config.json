@@ -4,6 +4,42 @@
       "Brand color #2": "#235787",
       "Brand color #3": "#FC8EAC"
   },
+  "@kenyaemr/esm-bed-management-app": {
+    "admissionLocationTagUuid": "f5b9737b-14d5-402b-8475-dd558808e172"
+  },
+  "@ehospital/esm-billing-app": {
+    "extensionSlots": {
+      "billing-dashboard-slot": {}
+    },
+    "excludedPaymentMode": [
+      {
+        "uuid": "eb6173cb-9678-4614-bbe1-0ccf7ed9d1d4",
+        "label": "Waiver"
+      }
+    ],
+    "patientExemptionCategories": [
+      {
+        "value": "IN_PRISON",
+        "label": "In Prison"
+      },
+      {
+        "value": "UNDER_5",
+        "label": "Under 5"
+      },
+      {
+        "value": "CCC",
+        "label": "CCC"
+      },
+      {
+        "value": "REFUGEES",
+        "label": "Refugees"
+      },
+      {
+        "value": "ABOVE_60_YRS",
+        "label": "Above 60 years"
+      }
+    ]
+  },
   "@openmrs/esm-login-app": {
       "logo": {
           "src": "/openmrs/spa/login-icon.png"
